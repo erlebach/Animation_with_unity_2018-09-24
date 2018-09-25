@@ -7,6 +7,7 @@ public class player_anim_script : MonoBehaviour {
 	public float jump_speed = 5;
 	public Rigidbody2D rb;
 	Animator my_animator;
+	bool is_grounded = true;
 
 	// Use this for initialization
 	void Start () {
@@ -17,11 +18,11 @@ public class player_anim_script : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		float x = Input.GetAxis("Horizontal");
-		float y = Input.GetAxis("Vertical");
 		transform.position += x * speed * Time.deltaTime * (new Vector3(1f,0f,0f));
 
-		if (Input.GetKey(KeyCode.Space)) {
+		if (Input.GetKey(KeyCode.Space) && is_grounded) {
 			my_animator.SetTrigger("isJumping");
+			is_grounded = false;
 			//rb.AddForce(new Vector2(0f, 20f));
 			rb.velocity = new Vector2(0f, jump_speed); // Alternative to AddForce
 		} else if (x > 0) {
@@ -34,4 +35,16 @@ public class player_anim_script : MonoBehaviour {
 			my_animator.SetTrigger("isIdle");
 		}
 	}
+
+
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		if (other.collider.CompareTag("Ground")) {
+			is_grounded = true;
+			print("ground");
+		}
+	}
 }
+
+
+

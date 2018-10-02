@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player_sprite_script : MonoBehaviour {
+public class class_9_25_2018 : MonoBehaviour {
 	public float speed = 1;
 	public float jump_speed;
 	private Rigidbody2D rb;

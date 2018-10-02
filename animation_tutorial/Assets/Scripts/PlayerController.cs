@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour {
 		}
 		else if(moveHorizontal > 0){
 			//transition to walking
-			sr.flipX = false;
+			sr.flipX = false; 
 			changeState("isWalking");
 		}
 		else{

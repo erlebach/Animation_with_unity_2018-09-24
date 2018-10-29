@@ -16,9 +16,11 @@ public class LevelManager : MonoBehaviour {
 	}
 
 	 public void LoadNextScene() {
-		 print("gordon");
 		int idx = SceneManager.GetActiveScene().buildIndex;
 		SceneManager.LoadScene(idx+1);
-		Debug.Log("idx= " + idx);
+	}
+
+	public void LoadScene(string scene_name) {
+		SceneManager.LoadScene(scene_name);
 	}
 }

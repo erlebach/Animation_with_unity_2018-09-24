@@ -113,54 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &815105935 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114307157131014108, guid: 208f7f74fe97f439b8f7b557f7fd49eb,
-    type: 2}
-  m_PrefabInternal: {fileID: 976562164}
-  m_Script: {fileID: 11500000, guid: 53dc599272b2643caae82b9fc16933f6, type: 3}
---- !u!1001 &976562164
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4165897721276168, guid: 208f7f74fe97f439b8f7b557f7fd49eb, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 833.83496
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165897721276168, guid: 208f7f74fe97f439b8f7b557f7fd49eb, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 438.91803
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165897721276168, guid: 208f7f74fe97f439b8f7b557f7fd49eb, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 15.998921
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165897721276168, guid: 208f7f74fe97f439b8f7b557f7fd49eb, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165897721276168, guid: 208f7f74fe97f439b8f7b557f7fd49eb, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165897721276168, guid: 208f7f74fe97f439b8f7b557f7fd49eb, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165897721276168, guid: 208f7f74fe97f439b8f7b557f7fd49eb, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165897721276168, guid: 208f7f74fe97f439b8f7b557f7fd49eb, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 208f7f74fe97f439b8f7b557f7fd49eb, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &1546142329
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,11 +386,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114305714316525506, guid: 0fa5d564e5fc94c74bc771222060efc8,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 815105935}
     - target: {fileID: 114742444333113972, guid: 0fa5d564e5fc94c74bc771222060efc8,
         type: 2}
       propertyPath: m_havePropertiesChanged

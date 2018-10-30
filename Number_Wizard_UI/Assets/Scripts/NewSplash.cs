@@ -19,6 +19,6 @@ public class NewSplash : MonoBehaviour {
 	}
 
 	void ChangeScene() {
-		level_manager.AutoLoad();
+		level_manager.LoadScene("Win");
 	}
 }

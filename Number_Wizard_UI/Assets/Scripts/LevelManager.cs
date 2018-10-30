@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 	public int next_scene = 0;
-	public int nb_seconds = 3;
+	public int nb_seconds = 0;
 
 	// Use this for initialization
 	void Start () {
-		Invoke("AutoLoad", nb_seconds);
+		if (nb_seconds != 0) {
+			Invoke("AutoLoad", nb_seconds);
+		}
 	}
 
 	 public void LoadNextScene() {

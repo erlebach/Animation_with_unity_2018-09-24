@@ -19,6 +19,7 @@ public class Counter : MonoBehaviour {
 		base_value = 0f; // not sure this is required
 		max_value = 10;
 		text.text = "" + max_value;   // notice I am adding to an empty string
+		//StartCoroutine(UpdateCounter());
 	}
 	
 	// Update is called once per frame
@@ -27,8 +28,8 @@ public class Counter : MonoBehaviour {
 
 		// The second time counter is called, Time.time runs way way too fast. Why? 
 		if (Time.time > base_value) {
-			Debug.Log("base_value: " + base_value);
-			Debug.Log("time: " + Time.time);
+			//Debug.Log("base_value: " + base_value);
+			//Debug.Log("time: " + Time.time);
 			max_value -= 1;
 			text.text = "" + max_value;
 			base_value += time_between_updates;
@@ -36,7 +37,15 @@ public class Counter : MonoBehaviour {
 	
 		if (max_value <= 0) {
 			Debug.Log("LoadScene CutScene");
+			base_value = 0f;
 			level_manager.LoadScene("CutScene");
+
 		}
 	}
+
+/* 	IEnumerator UpdateCounter() {
+		max_value += (int) ((float) max_value + time_between_updates);
+		text.text = "" + max_value;
+		yield return new WaitForSeconds(time_between_updates);
+	} */
 }

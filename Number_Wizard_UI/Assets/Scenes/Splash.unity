@@ -190,7 +190,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &325642542
+--- !u!1001 &407713142
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -229,11 +229,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114307157131014108, guid: 208f7f74fe97f439b8f7b557f7fd49eb,
-        type: 2}
-      propertyPath: nb_seconds
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 208f7f74fe97f439b8f7b557f7fd49eb, type: 2}
   m_IsPrefabAsset: 0
@@ -264,6 +259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f8db642beee74861b84ef9c205fe0b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  how_long: 3
+  level_manager: {fileID: 1581626479}
 --- !u!4 &821985936
 Transform:
   m_ObjectHideFlags: 0
@@ -408,6 +405,12 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1177711439}
   m_CullTransparentMesh: 0
+--- !u!114 &1581626479 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114307157131014108, guid: 208f7f74fe97f439b8f7b557f7fd49eb,
+    type: 2}
+  m_PrefabInternal: {fileID: 407713142}
+  m_Script: {fileID: 11500000, guid: 53dc599272b2643caae82b9fc16933f6, type: 3}
 --- !u!1 &1748191387
 GameObject:
   m_ObjectHideFlags: 0

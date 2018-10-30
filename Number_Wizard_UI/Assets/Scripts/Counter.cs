@@ -1,0 +1,36 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+public class Counter : MonoBehaviour {
+	public Text text;
+	public int max_value = 10;
+	public LevelManager level_manager;
+
+	// parameter to support counter speed
+	private float base_value = 0f;
+	public float time_between_updates = 1f;
+
+	// Use this for initialization
+	void Start () {
+		max_value = 10;
+		text.text = "" + max_value;   // notice I am adding to an empty string
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		// Create a counter and control its speed
+		if (Time.time > base_value) {
+			max_value -= 1;
+			text.text = "" + max_value;
+			base_value += time_between_updates;
+		}
+		print(max_value);
+		if (max_value <= 0) {
+			Debug.Log("LoadScene CutScene");
+			level_manager.LoadScene("CutScene");
+		}
+	}
+}

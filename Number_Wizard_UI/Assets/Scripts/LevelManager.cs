@@ -5,14 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 	public int next_scene = 0;
+	public int nb_seconds = 3;
 
 	// Use this for initialization
 	void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+		Invoke("AutoLoad", nb_seconds);
 	}
 
 	 public void LoadNextScene() {
@@ -26,5 +23,9 @@ public class LevelManager : MonoBehaviour {
 
 	public void QuitGame() {
 		Application.Quit(); // called but does not work
+	}
+
+	public void AutoLoad() {
+		LoadScene("Start");
 	}
 }

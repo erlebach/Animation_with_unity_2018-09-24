@@ -23,4 +23,8 @@ public class LevelManager : MonoBehaviour {
 	public void LoadScene(string scene_name) {
 		SceneManager.LoadScene(scene_name);
 	}
+
+	public void QuitGame() {
+		Application.Quit(); // called but does not work
+	}
 }

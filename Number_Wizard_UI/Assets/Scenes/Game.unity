@@ -426,6 +426,10 @@ Prefab:
       propertyPath: m_textInfo.spaceCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1033339155272222, guid: 0fa5d564e5fc94c74bc771222060efc8, type: 2}
+      propertyPath: m_Name
+      value: Level Complete Button
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fa5d564e5fc94c74bc771222060efc8, type: 2}
   m_IsPrefabAsset: 0
